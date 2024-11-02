@@ -3,7 +3,7 @@ import sys
 
 sock = socket.socket(socket.AF_UNIX, socket.SOCK_STREAM)
 
-server_adress = "/socket_file"
+server_adress = "./socket_file"
 print("connecting to {}".format(server_adress))
 
 try:
@@ -18,7 +18,7 @@ try:
         if message:
             sock.sendall(message)
 
-            sock.timeout(2)
+            sock.settimeout(2)
 
             try:
                 while True:
