@@ -18,6 +18,14 @@ $ python client.py
 ```
 &nbsp;
 
+### Fakerのインストール方法
+**Ubuntu**
+```bash
+UbuntuにFakerをインストール
+$ sudo apt update
+$ pip install faker
+```
+
 #### 使用技術
 <p style="display: inline">
 <img src="https://img.shields.io/badge/-Linux-212121.svg?logo=linux&style=popout">
