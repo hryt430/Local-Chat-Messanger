@@ -1,25 +1,30 @@
 # Local Chat Messenger
 
 ## 概要
-このプログラムは、MarkdownファイルをHTML形式に変換するツールです。以下の操作がサポートされています。
+このプログラムはPythonのソケット通信とfakerパッケージを使用して、クライアントサーバ間で情報をやりとりするシンプルなアプリケーションです。
+サーバーは、クライアントからメッセージを受け取るとfakerで返答を生成して、クライアントに送り返します。
 
 ## 使い方
 
-プログラムを実行するには以下の形式でコマンドライン引数を指定してください
+プログラムを以下の形式で実行してください。
 
+1. ターミナルでserver.pyを立ち上げます
 ```bash
-$ python file-converter.py sample.md sample.html
+$ python server.py
+```
+2. 別のターミナルでclient.pyを立ち上げる
+```bash
+$ python client.py
 ```
 &nbsp;
 
-### markdownのインストール方法
-
-**Ubuntu**<br>
+### Fakerのインストール方法
+**Ubuntu**
 ```bash
-$ pip install markdown
+UbuntuにFakerをインストール
+$ sudo apt update
+$ pip install faker
 ```
-&nbsp;
-
 #### 使用技術
 <p style="display: inline">
 <img src="https://img.shields.io/badge/-Linux-212121.svg?logo=linux&style=popout">
